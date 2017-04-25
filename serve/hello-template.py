@@ -10,7 +10,7 @@ def hello():
       'title' : 'HELLO!',
       'time': timeString
       }
-   return render_template('templates\main.html', **templateData)
+   return render_template('serve/templates/main.html', **templateData)
 
 if __name__ == "__main__":
    app.run(host='0.0.0.0', port=80, debug=True)
